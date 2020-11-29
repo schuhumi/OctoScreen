@@ -1,0 +1,161 @@
+/* * {
+    
+} */
+
+window {
+	background-color: #000;
+	color: #FFF;
+	-gtk-icon-shadow: none;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+scrollbar, scrollbar button {
+	border: none;
+	background-color: #000;
+}
+
+scrollbar slider {
+	min-width: 88px;
+	border-radius: 20px;
+	background-color: #fff;
+}
+
+.printing-progress-bar{
+	font-size: 100px;
+	color: #FFF;
+	background: #000;
+}
+
+progressbar trough {
+  background: #FFF;
+	min-height: 28px;
+	font-size: 100px;
+}
+
+progressbar progress {
+  min-height: 20px;
+  background: #000;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+
+.printing-state {
+	opacity: 1.0;
+}
+
+button {
+	background-image: none;
+	background-color: #FFF;
+	color: #000;
+	margin: 0px;
+	margin-bottom: 0px;
+	border-radius: 20px;
+	border: 5px solid black;
+	-gtk-icon-shadow: none;
+}
+
+button:active {
+  box-shadow: inset 0px 0px 0px 30px #000;
+}
+
+/*
+button.color1 {
+	border-bottom: 8px solid #ED6500;
+}
+
+button.color2 {
+	border-bottom: 8px solid #B10080;
+}
+
+button.color3 {
+	border-bottom: 8px solid #009384;
+}
+
+button.color4 {
+	border-bottom: 8px solid #A7E100;
+}*/
+
+button.active {
+	/*background-color: #BBB;
+	text-shadow: 0px 0px 2px #FFF; */
+	box-shadow: inset 0px 0px 0px 30px #999;
+}
+
+button.file-list {
+	margin: 0px;
+	color: #FFF;
+}
+
+entry {
+	font-size: 60px;
+	background-color: #FFF;
+	color: #000;
+	border-radius: 0;
+	padding-left: 1em;
+	margin-left: 1em;
+	padding-right: 1em;
+}
+
+button.keyboard {
+	font-size: 600px;
+	margin: 0px;
+	/* margin-bottom:10px; */
+}
+
+.dialog {
+	border: 10px solid black;
+	font-size: 40px;
+	padding: 50px;
+	background-color: #FFF;
+	color: #000;
+}
+
+.dialog button {
+	padding: 30px 50px 30px 50px;
+	margin: 20px;
+}
+
+.message {
+	border: 10px solid #000;
+	font-size: 40px;
+	padding: 50px;
+	color: #000;
+	background-color: #FFF;
+}
+
+.message button {
+	background-color: #FFF;
+	color: #000;
+	padding: 40px 50px 40px 50px;
+	margin: 20px;
+}
+
+.notification {
+	background-clip: padding-box;
+	padding: 5px;
+	border-radius: 0 0 5px 5px;
+	opacity: 1.0;
+}
+
+.warning {
+	/*background-color: rgba(30, 204, 39, 0.7);*/
+}
+
+.error {
+	/*background-color: rgba(204, 30, 30, 0.7);*/
+}
+
+.printing-status-label {
+	padding-top: 5px;
+	padding-bottom: 3px;
+
+	font-size: 48px;
+	color: #FFF;
+}
+
+.hidden {
+    opacity: 0;
+}
+
