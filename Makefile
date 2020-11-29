@@ -53,7 +53,7 @@ $(DEBIAN_PACKAGES):
 		--build-arg GO_TAGS=${${@}_GO_TAGS} \
 		-t ${DOCKER_IMAGE_BUILD}:${${@}_NAME} . \
 		&& \
-	docker run -it --rm \
+	docker run -it \
 		-v ${BUILD_PATH}/${${@}_NAME}:/build \
 		${DOCKER_IMAGE_BUILD}:${${@}_NAME} \
 		make build-internal
@@ -62,7 +62,7 @@ build-internal: prepare-internal
 	#go build --tags ${GO_TAGS} -v -o /build/bin/${BINARY_NAME} main.go
 	cd $(WORKDIR); \
 	debuild --prepend-path=/usr/local/go/bin/ --preserve-env -us -uc; \
-	cp ../*.deb /build/;
+	cp -r ../* /build/;
 
 prepare-internal:
 	dch --create -v $(VERSION)-1 --package $(PACKAGE_NAME) empty; \
